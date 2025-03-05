@@ -22,7 +22,7 @@
 Partitioning can be done in two types:
 1) Along with the giving partition key in table in query, we have to create folder wise partition in bucket also, so that it will match the partition given. Partition will not be created by self they will be created in bucket folder wise also 
 
-Partitioning naming convention - #1
+**Partitioning naming convention - #1**<br>
 Partition column name followed by  '=' symbol.
 Example: s3://bucket/data/year=2019/month=12/day=31
 
