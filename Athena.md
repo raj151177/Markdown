@@ -28,5 +28,5 @@ Example: s3://bucket/data/year=2019/month=12/day=31
 
 s3://yourbucket/pathToTable/<PARTITION_COLUMN_NAME>=<VALUE>/<PARTITION_COLUMN_NAME>=<VALUE>/
 
-//Load the partitions
+//Load the partitions<BR>
 MSCK REPAIR TABLE table_name;
