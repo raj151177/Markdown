@@ -40,3 +40,9 @@ s3://yourBucket/pathToTable/YYYY/MM/DD/ <br>
 **//Load the partitions**<br>
 Alter table <tablename> add Partition(PARTITION_COLUMN_NAME= <VALUE>, 
 PARTITION_COLUMN2_NAME = <VALUE>) LOCATION 'S3://yourBucket/pathToTable/YYYY/MM/DD';
+
+**Creating Athena tables**<br>
+There are 3 main ways to create a new table for Athena:
+1. using AWS Glue Crawler
+2. defining the scehma manually
+3. through SQL DDL queries
