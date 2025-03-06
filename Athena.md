@@ -30,3 +30,13 @@ s3://yourbucket/pathToTable/<PARTITION_COLUMN_NAME>=<VALUE>/<PARTITION_COLUMN_NA
 
 //Load the partitions<BR>
 MSCK REPAIR TABLE table_name;
+
+**Partitioning naming convention -#2**<br>
+if the S3 path doesn't have '=' symbol <br>
+*Example :*  s3://bucket/data/2019/12/31 <br>
+
+s3://yourBucket/pathToTable/YYYY/MM/DD/ <br>
+
+**//Load the partitions**<br>
+Alter table <tablename> add Partition(PARTITION_COLUMN_NAME= <VALUE>, 
+PARTITION_COLUMN2_NAME = <VALUE>) LOCATION 'S3://yourBucket/pathToTable/YYYY/MM/DD';
